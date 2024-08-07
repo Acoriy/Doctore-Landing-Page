@@ -11,7 +11,7 @@ import blog6 from "../assets/img/blog6.jpg";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen lg:px-32 p-5 w-full pt-24">
+    <div className="min-h-screen lg:px-32 p-5 w-full pt-24 !scroll-smooth">
       <div className="flex flex-col ">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div>

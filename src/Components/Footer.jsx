@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-backgroundColor text-white rounded-t-3xl ">
+    <div className="w-full bg-backgroundColor text-white rounded-t-3xl !scroll-smooth">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className="w-full md:w-1/4 ">
           <h1 className="text-xl font-semibold pb-4">WellnessVista</h1>
@@ -45,7 +45,7 @@ const Footer = () => {
       <div>
         <p className="text-center py-4 text-lg">
         @copyright developed by  
-        <a href="https://sofyaneacoriy.netlify.app/" target="_blank" className="text-hoverColor text-xl font-semibold"> Sofyane Acoriy </a> 
+        <a href="https://sofyaneacoriy.netlify.app/" target="_blank" className="text-hoverColor text-xl font-semibold hover:underline"> Sofyane Acoriy </a> 
         | All rights reserved
         </p>
       </div>

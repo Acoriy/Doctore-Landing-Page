@@ -79,7 +79,7 @@ const Doctore = () => {
   };
   
   return (
-    <div className="min-h-screen flex flex-col lg:px-32 px-5 lg:pt-32 pt-20">
+    <div className="min-h-screen flex flex-col lg:px-32 px-5 lg:pt-32 pt-20 !scroll-smooth">
       <div className="flex flex-col lg:flex-row  justify-between mb-10 lg:mb-0">
         <div className="space-y-4">
           <h1 className="text-4xl font-semibold text-center lg:text-start">Our Doctors</h1>

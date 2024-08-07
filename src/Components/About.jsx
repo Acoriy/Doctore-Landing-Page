@@ -2,7 +2,7 @@ import AboutImg from '../assets/img/about.jpg'
 
 const About = () => {
   return (
-    <div className="min-h-screen lg:px-32 px-5 flex flex-col lg:flex-row justify-between items-center pt-24 lg:pt-16 ">
+    <div className="min-h-screen lg:px-32 px-5 flex flex-col lg:flex-row justify-between items-center pt-24 lg:pt-16 !scroll-smooth">
       <div className="space-y-4 w-full lg:w-3/4">
         <h1 className="text-4xl font-semibold text-[#111] text-center lg:text-start">About Us</h1>
         <p className="text-justify lg:text-start">

@@ -15,7 +15,7 @@ function App() {
   return (
     <>
        <Navebare/>
-       <main>
+       <main className="scrollbar scrollbar-thumb-rose-500">
          <div id="home">
             <Home/>
          </div>

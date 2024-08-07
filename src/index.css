@@ -13,11 +13,33 @@ body{
   margin: 0 16px;
 }
 
-@layer {
+/* @layer {
   .container{
     @apply  flex items-center justify-between  
   }
   .li{
     @apply hover:text-hoverColor transition-all duration-300 ease-in-out cursor-pointer ml-8
   }
+} */
+
+/* ::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #36ae9a;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#36ae9a , #ade9dc);
+} */
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background: #f6fffd;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#36ae9a, #ade9dc);
+  border-radius: 10px;
 }
