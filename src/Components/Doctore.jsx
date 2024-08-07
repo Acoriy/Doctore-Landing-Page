@@ -3,40 +3,49 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
+
+// images doctores :
+import doc1 from '../assets/img/doc1.jpg';
+import doc2 from '../assets/img/doc2.jpg';
+import doc3 from '../assets/img/doc3.jpg';
+import doc4 from '../assets/img/doc4.jpg';
+import doc5 from '../assets/img/doc5.jpg';
+import doc6 from '../assets/img/doc6.jpg';
+import CardDoctore from "../layout/CardDoctore";
 const Doctore = () => {
 
-  const Data = [
-    {
-      img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Jonatan Mitchell",
-      specialties: "Orthopedic Surgeon",
-    },
-    {
-      img: "/src/assets/img/doc2.jpg",
-      name: "Dr. Olivia Martinez",
-      specialties: "Ophtalmologist",
-    },
-    {
-      img: "/src/assets/img/doc6.jpg",
-      name: "Dr. Julian Bennett",
-      specialties: "Cardiologist",
-    },
-    {
-      img: "/src/assets/img/doc3.jpg",
-      name: "Dr. Tomas Rodriguez",
-      specialties: "Pediatricien",
-    },
-    {
-      img: "/src/assets/img/doc4.jpg",
-      name: "Dr. Victoria Nguyen",
-      specialties: "Neurologist",
-    },
-    {
-      img: "/src/assets/img/doc5.jpg",
-      name: "Dr. Ethan Carter",
-      specialties: "Dermatologist",
-    },
-  ];
+  // const Data = [
+  //   {
+  //     img: "/src/assets/img/doc1.jpg",
+  //     name: "Dr. Jonatan Mitchell",
+  //     specialties: "Orthopedic Surgeon",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc2.jpg",
+  //     name: "Dr. Olivia Martinez",
+  //     specialties: "Ophtalmologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc6.jpg",
+  //     name: "Dr. Julian Bennett",
+  //     specialties: "Cardiologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc3.jpg",
+  //     name: "Dr. Tomas Rodriguez",
+  //     specialties: "Pediatricien",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc4.jpg",
+  //     name: "Dr. Victoria Nguyen",
+  //     specialties: "Neurologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc5.jpg",
+  //     name: "Dr. Ethan Carter",
+  //     specialties: "Dermatologist",
+  //   },
+  // ];
 
 
   const Slide = useRef(null);
@@ -99,7 +108,8 @@ const Doctore = () => {
       </div>
       <div className="mt-5">
         <Slider ref={Slide} {...settings}>
-          {Data.map((e, index) => (
+          {/* ------------ Methode 1 ) :--------------------- */}
+          {/* {Data.map((e, index) => (
             <div
               key={index}
               className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
@@ -116,7 +126,14 @@ const Doctore = () => {
                 <h3 className="pt-2">{e.specialties}</h3>
               </div>
             </div>
-          ))}
+          ))} */}
+          {/* Methode 2) : -------------------  */}
+          <CardDoctore img={doc1} specialties={'Orthopedic Surgeon'} name={'Dr. Jonatan Mitchell'}/>
+          <CardDoctore img={doc2} specialties={'Ophtalmologist'} name={'Dr. Olivia Martinez'}/>
+          <CardDoctore img={doc3} specialties={'Cardiologist'} name={'Dr. Julian Bennett'}/>
+          <CardDoctore img={doc4} specialties={'Pediatricien'} name={'Dr. Tomas Rodriguez'}/>
+          <CardDoctore img={doc5} specialties={'Neurologist'} name={'Dr. Victoria Nguyen'}/>
+          <CardDoctore img={doc6} specialties={'Dermatologist'} name={'Dr. Ethan Carter'}/>
         </Slider>
       </div>
     </div>
